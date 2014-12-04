@@ -38,6 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem "awesome_print"
+
 gem 'bundler'
 
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
@@ -51,6 +53,11 @@ gem 'binding_of_caller'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
+gem 'haml-rails'
+gem 'haml'
+gem 'formtastic', :github => 'justinfrench/formtastic', :branch => 'master'
+# gem 'formtastic', " ~> 2.3.0.rc2"
+gem 'formtastic-bootstrap', :github => "mjbellantoni/formtastic-bootstrap", :branch => "master"
 
 group :development, :test do
   gem 'dotenv-rails'

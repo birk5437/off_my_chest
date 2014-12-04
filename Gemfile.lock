@@ -17,6 +17,22 @@ GIT
       sass-rails
 
 GIT
+  remote: git://github.com/justinfrench/formtastic.git
+  revision: 2f0db5efaea5d8b331a51c31a74e780b9d822857
+  branch: master
+  specs:
+    formtastic (3.2.0.pre)
+      actionpack (>= 3.2.13)
+
+GIT
+  remote: git://github.com/mjbellantoni/formtastic-bootstrap.git
+  revision: ba946d2e33740a1e9ac6215b48f66b957fc17a5e
+  branch: master
+  specs:
+    formtastic-bootstrap (3.0.0)
+      formtastic (>= 3.0)
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: a9d90503e903dae8773236b8f413d725b2002f3b
   specs:
@@ -73,6 +89,7 @@ GEM
     arbre (1.0.2)
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
+    awesome_print (1.2.0)
     bcrypt (3.1.9)
     better_errors (2.0.0)
       coderay (>= 1.0.0)
@@ -102,9 +119,14 @@ GEM
     execjs (2.2.2)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    formtastic (3.1.2)
-      actionpack (>= 3.2.13)
     formtastic_i18n (0.1.1)
+    haml (4.0.6)
+      tilt
+    haml-rails (0.5.3)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 3.1, < 5.0)
+      railties (>= 4.0.1)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -383,6 +405,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   acts_as_votable!
+  awesome_print
   better_errors
   binding_of_caller
   bootstrap-sass!
@@ -391,6 +414,10 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise!
   dotenv-rails
+  formtastic!
+  formtastic-bootstrap!
+  haml
+  haml-rails
   jbuilder (~> 2.0)
   jquery-rails
   omniauth

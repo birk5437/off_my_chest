@@ -23,7 +23,10 @@ default: &default
 
 development:
   <<: *default
-  database: off_my_chest_development
+  database: off_my_chest_dev
+  host: localhost
+  username: burke
+  password: burke
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

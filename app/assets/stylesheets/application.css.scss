@@ -37,3 +37,27 @@
 .form-user {
   max-width: 450px;
 }
+
+
+textarea.form-control {
+  background-color: #26232C;
+  color: $text-color;
+}
+
+.btn {
+  margin-right: 1em;
+}
+
+form {
+  margin-left: 1em;
+}
+
+blockquote.post {
+  padding-top: 2px;
+  height: 130px;
+  overflow: hidden;
+}
+
+.table > tbody > tr > td {
+  border-top-style: none;
+}
