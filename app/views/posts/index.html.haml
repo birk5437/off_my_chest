@@ -1,0 +1,21 @@
+- model_class = Post
+-#.page-header
+-#%h1= t '.title', :default => Post
+= semantic_form_for @post, :html => {:class => 'form-model'} do |f|
+  = f.inputs do
+    = f.input :content
+  = f.actions do
+    = f.action :submit, :as => :button, :label => "Get it off your chest!", :button_html => {:class => "btn btn-primary"}
+%hr
+%table.table
+  %tbody
+    - @posts.each do |post|
+      %tr
+        %td
+          %span.glyphicon.glyphicon-arrow-up
+          %span.glyphicon.glyphicon-arrow-down
+        %td
+          %blockquote.post
+            %p
+              = post.content
+=# link_to t('.new', :default => t("helpers.links.new")), new_post_path, :class => 'btn btn-primary'

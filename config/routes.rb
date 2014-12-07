@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   resources :posts do
-  #->Prelang (voting/acts_as_votable)
-  member do
-    get "vote"
+    #->Prelang (voting/acts_as_votable)
+    member do
+      get "vote"
+    end
   end
-end
 
 
   devise_for :admin_users, ActiveAdmin::Devise.config
